@@ -1,19 +1,22 @@
 <template>
   <div class="container">
     <div>
-      <h1 class='title'>Mockpants: The Spongebob Mocking Text Mutator</h1>
-      <SassBobMockPants />
+      <div>
+        <h1 class='title'>MockBob SassyPants</h1>
+        <h2 class='subtitle'>A Spongebob Mocking Text Mutator</h2>
+      </div>
+      <MockBobSassyPants />
       <Mutator />
     </div>
   </div>
 </template>
 
 <script>
-import SassBobMockPants from '~/components/SassBobMockPants'
+import MockBobSassyPants from '~/components/MockBobSassyPants'
 import Mutator from '~/components/Mutator'
 export default {
   components: {
-    SassBobMockPants,
+    MockBobSassyPants,
     Mutator
   }
 }
@@ -33,6 +36,9 @@ export default {
   align-items: center;
 }
 .title {
-  @apply block uppercase tracking-wide text-gray-100 text-xl font-bold mb-4 underline text-center;
+  @apply block uppercase tracking-wide text-gray-100 text-xl font-bold mb-2 underline text-center;
+}
+.subtitle {
+  @apply block uppercase tracking-wide text-gray-100 font-bold mb-4 text-center;
 }
 </style>
