@@ -14,12 +14,12 @@ export default {
       { property: 'og:url', content: 'https://sassypants.whyistilley.dev', hid: 'og:url'},
       { property: 'og:title', content: 'MockBob SassyPants - Text Mutator', hid: 'og:title'},
       { property: 'og:description', content: 'A tiny text mutation project built with NuxtJS and VueJS to mutate text to look like text as seen in mocking spongebob meme format.', hid: 'og:description'},
-      { property: 'og:image', content: '/images/mocking-spongebob.jpeg', hid: 'og:image'},
+      { property: 'og:image', content: 'https://sassypants.whyistilley.dev/images/mocking-spongebob.jpeg', hid: 'og:image'},
       { property: 'twitter:card', content: 'summary_large_image', hid: 'twitter:card'},
       { property: 'twitter:url', content: 'https://sassypants.whyistilley.dev', hid: 'twitter:url'},
       { property: 'twitter:title', content: 'MockBob SassyPants - Text Mutator', hid: 'twitter:title'},
       { property: 'twitter:description', content: 'A tiny text mutation project built with NuxtJS and VueJS to mutate text to look like text as seen in mocking spongebob meme format.', hid: 'twitter:description'},
-      { property: 'twitter:image', content: '/images/mocking-spongebob.jpeg', hid: 'twitter:image'},
+      { property: 'twitter:image', content: 'https://sassypants.whyistilley.dev/images/mocking-spongebob.jpeg', hid: 'twitter:image'},
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
