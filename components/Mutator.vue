@@ -57,7 +57,6 @@ export default {
       event.preventDefault()
       if (this.text) {
         await navigator.clipboard.writeText(this.text);
-        alert('Copied!');
       }
     }
   }
