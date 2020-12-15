@@ -6,7 +6,7 @@
       <textarea id='mutator-input' v-model='text' placeholder='Type something in here to mutate it!'/>
     </div>
     <button @click='this.handleClick' class='mutator-btn'>{{ btnLabel }}</button>
-    <button @click='this.handleCopy' :class='{ "disabled": canCopy }' class='mutator-btn'>Copy</button>
+    <button @click='this.handleCopy' :class='{ disabled: canCopy }' class='mutator-btn'>Copy</button>
   </form>
 </div>
 </template>
@@ -31,9 +31,11 @@ export default {
       event.preventDefault()
       switch (this.btnLabel) {
         case 'Mutate':
-          this.label = 'mutated text';
-          this.btnLabel = 'Reset';
-          this.mutateText(this.text);
+          if (this.text) {
+            this.label = 'mutated text';
+            this.btnLabel = 'Reset';
+            this.mutateText(this.text);
+          }
           break;
         case 'Reset':
           this.label = 'text to mutate';
@@ -42,7 +44,7 @@ export default {
           break;
         default:
           this.label = 'text to mutate';
-          this.btnLabel = 'Reset';
+          this.btnLabel = 'Mutate';
           this.text = '';
       }
     },
